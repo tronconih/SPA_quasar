@@ -115,6 +115,7 @@
         icon-right="people"
         label="Contatti"
         class="contact-button"
+        @click="openUrl('https://google.com/')"
       />
     </div>
   </div>
@@ -124,6 +125,7 @@
 import { Todo, Meta } from 'components/models';
 import ExampleComponent from 'components/ExampleComponent.vue';
 import { ref } from 'vue';
+import { url } from 'inspector';
 
 const todos = ref<Todo[]>([
   {
@@ -150,4 +152,7 @@ const todos = ref<Todo[]>([
 const meta = ref<Meta>({
   totalCount: 1200,
 });
+function openUrl(link) {
+  window.open(link, '_self');
+}
 </script>
