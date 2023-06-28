@@ -13,7 +13,7 @@
       </q-toolbar>
 
       <q-tabs align="left">
-        <q-route-tab to="/IndexPage" label="Home" />
+        <q-route-tab :to="{ name: 'home' }" label="Home" />
         <q-route-tab to="/page2" label="Corsi" />
         <q-route-tab to="/page3" label="About" />
         <q-route-tab to="/page4" label="❁" />
@@ -27,35 +27,35 @@
 
       <q-item clickable v-ripple>
         <q-item-section avatar>
-          <q-icon name="house" />
+          <q-icon name="mdi-home" />
         </q-item-section>
         <q-item-section> Home </q-item-section>
       </q-item>
 
       <q-item clickable v-ripple>
         <q-item-section avatar>
-          <q-icon name="school" />
+          <q-icon name="mdi-school" />
         </q-item-section>
         <q-item-section> Corsi </q-item-section>
       </q-item>
 
       <q-item clickable v-ripple>
         <q-item-section avatar>
-          <q-icon name="❓" />
+          <q-icon name="mdi-help" />
         </q-item-section>
         <q-item-section> About </q-item-section>
       </q-item>
 
       <q-item clickable v-ripple>
         <q-item-section avatar>
-          <q-icon name="people" />
+          <q-icon name="mdi-account-group" />
         </q-item-section>
         <q-item-section> Log In </q-item-section>
       </q-item>
 
       <q-item clickable v-ripple>
         <q-item-section avatar>
-          <q-icon name="inbox" />
+          <q-icon name="mdi-inbox" />
         </q-item-section>
         <q-item-section> Sign In </q-item-section>
       </q-item>
