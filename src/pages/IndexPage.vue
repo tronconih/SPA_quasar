@@ -153,6 +153,7 @@ const meta = ref<Meta>({
   totalCount: 1200,
 });
 function openUrl(link) {
+  // _self is needed not to open the link in another window.
   window.open(link, '_self');
 }
 </script>
