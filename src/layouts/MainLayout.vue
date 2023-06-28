@@ -13,7 +13,7 @@
       </q-toolbar>
 
       <q-tabs align="left">
-        <q-route-tab to="/IndexPage.vue" label="Home" />
+        <q-route-tab to="/IndexPage" label="Home" />
         <q-route-tab to="/page2" label="Corsi" />
         <q-route-tab to="/page3" label="About" />
         <q-route-tab to="/page4" label="❁" />
@@ -41,21 +41,21 @@
 
       <q-item clickable v-ripple>
         <q-item-section avatar>
-          <q-icon />
+          <q-icon name="❓" />
         </q-item-section>
         <q-item-section> About </q-item-section>
       </q-item>
 
       <q-item clickable v-ripple>
         <q-item-section avatar>
-          <q-icon name="log" />
+          <q-icon name="people" />
         </q-item-section>
         <q-item-section> Log In </q-item-section>
       </q-item>
 
       <q-item clickable v-ripple>
         <q-item-section avatar>
-          <q-icon name="sign" />
+          <q-icon name="inbox" />
         </q-item-section>
         <q-item-section> Sign In </q-item-section>
       </q-item>
